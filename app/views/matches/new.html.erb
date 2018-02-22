@@ -8,7 +8,7 @@
 </p>
 <div class="form-group">
 Player:
-<%= form.collection_select(:opponent_id, Player.all, :id, :name, {}, {class: "form-control"}) %>
+<%= form.collection_select(:player_id, Player.all, :id, :name, {}, {class: "form-control"}) %>
 </div>
 <p>
 <%= form.label :your_score %><br>

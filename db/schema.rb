@@ -15,14 +15,14 @@ ActiveRecord::Schema.define(version: 20180222010417) do
 
   create_table "matches", force: :cascade do |t|
     t.date     "date"
-    t.integer  "opponent_id"
+    t.integer  "player_id"
     t.integer  "yscore"
     t.integer  "tscore"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  add_index "matches", ["opponent_id"], name: "index_matches_on_opponent_id"
+  add_index "matches", ["player_id"], name: "index_matches_on_player_id"
 
   create_table "players", force: :cascade do |t|
     t.string   "name"
