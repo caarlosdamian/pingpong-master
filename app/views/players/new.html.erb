@@ -1,0 +1,17 @@
+<h1>New Players</h1>
+
+<%= form_for Player.new do |form| %>
+
+
+<p>
+<%= form.label :Player %><br>
+<%= form.text_field :name %>
+</p>
+<div class="form-group">
+Player:
+<%= form.collection_select(:match_id, Match.all, :id, :date, {}, {class: "form-control"}) %>
+</div>
+ 
+
+  <%= form.submit %>
+<% end %>

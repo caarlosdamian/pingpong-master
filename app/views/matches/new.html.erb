@@ -1,0 +1,27 @@
+<h1>New Match</h1>
+
+<%= form_for Match.new do |form| %>
+
+<p>
+  <%= form.label :date %><br>
+  <%= form.date_field :date %>
+</p>
+<div class="form-group">
+Player:
+<%= form.collection_select(:opponent_id, Player.all, :id, :name, {}, {class: "form-control"}) %>
+</div>
+<p>
+<%= form.label :your_score %><br>
+<%= form.text_field :yscore %>
+</p>
+
+<p>
+<%= form.label :their_score %><br>
+<%= form.text_field :tscore %>
+</p>
+
+
+ 
+
+  <%= form.submit %>
+<% end %>

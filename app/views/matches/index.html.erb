@@ -1,0 +1,18 @@
+
+<table>
+<tr>
+  <th>Date</th>
+  <th>Opponent</th>
+  <th>Score</th>}
+  <th>Result</th>
+  <th colspan="6"></th>
+</tr>
+
+<% @matches.each do |match| %>
+  <tr>
+    <td><%= match.date %></td>
+    <td><%= match.opponent_id %></td>
+    <td><%= match.yscore %></td>
+  </tr>
+<% end %>
+</table>
