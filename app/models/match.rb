@@ -1,3 +1,3 @@
 class Match < ActiveRecord::Base
-  belongs_to :opponents
+  has_many :opponents
 end
