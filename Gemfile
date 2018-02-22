@@ -8,7 +8,6 @@ gem 'jquery-rails'
 gem 'turbolinks',   '~> 2.5.3'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'devise',       '~> 3.5.2'
-gem 'pg'
 gem 'devise-bootstrap-views', '~> 0.0.6'
 
 

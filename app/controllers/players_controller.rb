@@ -6,7 +6,6 @@ class PlayersController < ApplicationController
     end
     def create 
         @player = Player.new(player_params)
-byebug
         if  @player.save
             redirect_to @player
         else
